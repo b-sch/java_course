@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DiagonalStar/DiagonalStar.iml" filepath="$PROJECT_DIR$/DiagonalStar/DiagonalStar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DigitSumChallenge/DigitSumChallenge.iml" filepath="$PROJECT_DIR$/DigitSumChallenge/DigitSumChallenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EvenDigitSum/EvenDigitSum.iml" filepath="$PROJECT_DIR$/EvenDigitSum/EvenDigitSum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FactorPrinter/FactorPrinter.iml" filepath="$PROJECT_DIR$/FactorPrinter/FactorPrinter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FirstLastDigitSum/FirstLastDigitSum.iml" filepath="$PROJECT_DIR$/FirstLastDigitSum/FirstLastDigitSum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FlourPacker/FlourPacker.iml" filepath="$PROJECT_DIR$/FlourPacker/FlourPacker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ForChallenge/ForChallenge.iml" filepath="$PROJECT_DIR$/ForChallenge/ForChallenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ForStatement/ForStatement.iml" filepath="$PROJECT_DIR$/ForStatement/ForStatement.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GreatestCommonDivisor/GreatestCommonDivisor.iml" filepath="$PROJECT_DIR$/GreatestCommonDivisor/GreatestCommonDivisor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/JAVA.iml" filepath="$PROJECT_DIR$/.idea/JAVA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LargestPrime/LargestPrime.iml" filepath="$PROJECT_DIR$/LargestPrime/LargestPrime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LastDigitChecker/LastDigitChecker.iml" filepath="$PROJECT_DIR$/LastDigitChecker/LastDigitChecker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NumberInWord/NumberInWord.iml" filepath="$PROJECT_DIR$/NumberInWord/NumberInWord.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NumberOfDaysInMonth/NumberOfDaysInMonth.iml" filepath="$PROJECT_DIR$/NumberOfDaysInMonth/NumberOfDaysInMonth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NumberPalindrome/NumberPalindrome.iml" filepath="$PROJECT_DIR$/NumberPalindrome/NumberPalindrome.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NumberToWords/NumberToWords.iml" filepath="$PROJECT_DIR$/NumberToWords/NumberToWords.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PerfectNumber/PerfectNumber.iml" filepath="$PROJECT_DIR$/PerfectNumber/PerfectNumber.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ReadingUserInput/ReadingUserInput.iml" filepath="$PROJECT_DIR$/ReadingUserInput/ReadingUserInput.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SecondsAndMinutesChallenge/SecondsAndMinutesChallenge.iml" filepath="$PROJECT_DIR$/SecondsAndMinutesChallenge/SecondsAndMinutesChallenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SharedDigit/SharedDigit.iml" filepath="$PROJECT_DIR$/SharedDigit/SharedDigit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sum3And5Challenge/Sum3And5Challenge.iml" filepath="$PROJECT_DIR$/Sum3And5Challenge/Sum3And5Challenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SumOdd/SumOdd.iml" filepath="$PROJECT_DIR$/SumOdd/SumOdd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Switch2/Switch2.iml" filepath="$PROJECT_DIR$/Switch2/Switch2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SwitchChallenge/SwitchChallenge.iml" filepath="$PROJECT_DIR$/SwitchChallenge/SwitchChallenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SwitchStatement/SwitchStatement.iml" filepath="$PROJECT_DIR$/SwitchStatement/SwitchStatement.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ThePrimeNumberChallenge/ThePrimeNumberChallenge.iml" filepath="$PROJECT_DIR$/ThePrimeNumberChallenge/ThePrimeNumberChallenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WhileLoop/WhileLoop.iml" filepath="$PROJECT_DIR$/WhileLoop/WhileLoop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WhileLoopChallenge/WhileLoopChallenge.iml" filepath="$PROJECT_DIR$/WhileLoopChallenge/WhileLoopChallenge.iml" />
+    </modules>
+  </component>
+</project>
