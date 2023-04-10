@@ -27,6 +27,7 @@
       <module fileurl="file://$PROJECT_DIR$/PaintJob/PaintJob.iml" filepath="$PROJECT_DIR$/PaintJob/PaintJob.iml" />
       <module fileurl="file://$PROJECT_DIR$/PerfectNumber/PerfectNumber.iml" filepath="$PROJECT_DIR$/PerfectNumber/PerfectNumber.iml" />
       <module fileurl="file://$PROJECT_DIR$/PersonExercise/PersonExercise.iml" filepath="$PROJECT_DIR$/PersonExercise/PersonExercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PointExercise/PointExercise.iml" filepath="$PROJECT_DIR$/PointExercise/PointExercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/ReadingUserInput/ReadingUserInput.iml" filepath="$PROJECT_DIR$/ReadingUserInput/ReadingUserInput.iml" />
       <module fileurl="file://$PROJECT_DIR$/ReadingUserInputChallenge/ReadingUserInputChallenge.iml" filepath="$PROJECT_DIR$/ReadingUserInputChallenge/ReadingUserInputChallenge.iml" />
       <module fileurl="file://$PROJECT_DIR$/RecordProject/RecordProject.iml" filepath="$PROJECT_DIR$/RecordProject/RecordProject.iml" />
@@ -39,7 +40,7 @@
       <module fileurl="file://$PROJECT_DIR$/SwitchChallenge/SwitchChallenge.iml" filepath="$PROJECT_DIR$/SwitchChallenge/SwitchChallenge.iml" />
       <module fileurl="file://$PROJECT_DIR$/SwitchStatement/SwitchStatement.iml" filepath="$PROJECT_DIR$/SwitchStatement/SwitchStatement.iml" />
       <module fileurl="file://$PROJECT_DIR$/ThePrimeNumberChallenge/ThePrimeNumberChallenge.iml" filepath="$PROJECT_DIR$/ThePrimeNumberChallenge/ThePrimeNumberChallenge.iml" />
-      <module fileurl="file://$PROJECT_DIR$/WallArea/WallArea.iml" filepath="$PROJECT_DIR$/WallArea/WallArea.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WallAreaExercise/WallAreaExercise.iml" filepath="$PROJECT_DIR$/WallAreaExercise/WallAreaExercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/WhileLoop/WhileLoop.iml" filepath="$PROJECT_DIR$/WhileLoop/WhileLoop.iml" />
       <module fileurl="file://$PROJECT_DIR$/WhileLoopChallenge/WhileLoopChallenge.iml" filepath="$PROJECT_DIR$/WhileLoopChallenge/WhileLoopChallenge.iml" />
     </modules>
