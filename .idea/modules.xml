@@ -18,6 +18,7 @@
       <module fileurl="file://$PROJECT_DIR$/ForStatement/ForStatement.iml" filepath="$PROJECT_DIR$/ForStatement/ForStatement.iml" />
       <module fileurl="file://$PROJECT_DIR$/GreatestCommonDivisor/GreatestCommonDivisor.iml" filepath="$PROJECT_DIR$/GreatestCommonDivisor/GreatestCommonDivisor.iml" />
       <module fileurl="file://$PROJECT_DIR$/Inheritance/Inheritance.iml" filepath="$PROJECT_DIR$/Inheritance/Inheritance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InheritanceChallenge/InheritanceChallenge.iml" filepath="$PROJECT_DIR$/InheritanceChallenge/InheritanceChallenge.iml" />
       <module fileurl="file://$PROJECT_DIR$/InputCalculator/InputCalculator.iml" filepath="$PROJECT_DIR$/InputCalculator/InputCalculator.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/JAVA.iml" filepath="$PROJECT_DIR$/.idea/JAVA.iml" />
       <module fileurl="file://$PROJECT_DIR$/LargestPrime/LargestPrime.iml" filepath="$PROJECT_DIR$/LargestPrime/LargestPrime.iml" />
