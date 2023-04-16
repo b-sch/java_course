@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/AllAboutStrings/AllAboutStrings.iml" filepath="$PROJECT_DIR$/AllAboutStrings/AllAboutStrings.iml" />
       <module fileurl="file://$PROJECT_DIR$/CarpetCostCalculatorExercise/CarpetCostCalculatorExercise.iml" filepath="$PROJECT_DIR$/CarpetCostCalculatorExercise/CarpetCostCalculatorExercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/ClassChallengeExercise/ClassChallengeExercise.iml" filepath="$PROJECT_DIR$/ClassChallengeExercise/ClassChallengeExercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/ClassesAndObjects/ClassesAndObjects.iml" filepath="$PROJECT_DIR$/ClassesAndObjects/ClassesAndObjects.iml" />
@@ -37,6 +38,7 @@
       <module fileurl="file://$PROJECT_DIR$/RecordProject/RecordProject.iml" filepath="$PROJECT_DIR$/RecordProject/RecordProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/SecondsAndMinutesChallenge/SecondsAndMinutesChallenge.iml" filepath="$PROJECT_DIR$/SecondsAndMinutesChallenge/SecondsAndMinutesChallenge.iml" />
       <module fileurl="file://$PROJECT_DIR$/SharedDigit/SharedDigit.iml" filepath="$PROJECT_DIR$/SharedDigit/SharedDigit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StringFormatting/StringFormatting.iml" filepath="$PROJECT_DIR$/StringFormatting/StringFormatting.iml" />
       <module fileurl="file://$PROJECT_DIR$/Sum3And5Challenge/Sum3And5Challenge.iml" filepath="$PROJECT_DIR$/Sum3And5Challenge/Sum3And5Challenge.iml" />
       <module fileurl="file://$PROJECT_DIR$/SumCalculator/SumCalculator.iml" filepath="$PROJECT_DIR$/SumCalculator/SumCalculator.iml" />
       <module fileurl="file://$PROJECT_DIR$/SumOdd/SumOdd.iml" filepath="$PROJECT_DIR$/SumOdd/SumOdd.iml" />
