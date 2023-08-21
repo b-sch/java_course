@@ -6,6 +6,16 @@ public class Main extends Object {
 
         PrimarySchoolStudent jimmy = new PrimarySchoolStudent("Jimmy", 8, "Carole");
         System.out.println(jimmy);
+
+
+        String test = "x";
+        int counter = 0;
+
+        while (true) {
+            System.out.println(test);
+            test += "counter";
+            counter++;
+        }
     }
 }
 

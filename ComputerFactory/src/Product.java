@@ -28,7 +28,9 @@ class Monitor extends Product {
     }
 
     public void drawPixelAt(int x, int y, String color) {
-        System.out.println(String.format("Drawing pixel at %d, %d in color %s", x, y, color));
+        System.out.println(String.format(
+                "Drawing pixel at %d,%d in color %s", x, y, color
+        ));
     }
 }
 
@@ -50,7 +52,7 @@ class Motherboard extends Product {
     }
 
     public void loadProgram(String programName) {
-        System.out.println("Program " + programName + " is now loading...");
+        System.out.println("Program " + programName + " is now loading ...");
     }
 }
 
@@ -67,6 +69,6 @@ class ComputerCase extends Product {
     }
 
     public void pressPowerButton() {
-        System.out.println("Power button pressed");
+        System.out.println("Power button was pressed");
     }
 }

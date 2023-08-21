@@ -4,7 +4,9 @@ public class PersonalComputer extends Product{
     private Monitor monitor;
     private Motherboard motherboard;
 
-    public PersonalComputer(String model, String manufacturer, ComputerCase computerCase, Monitor monitor, Motherboard motherboard) {
+    public PersonalComputer(String model, String manufacturer,
+                            ComputerCase computerCase, Monitor monitor,
+                            Motherboard motherboard) {
         super(model, manufacturer);
         this.computerCase = computerCase;
         this.monitor = monitor;
@@ -12,15 +14,13 @@ public class PersonalComputer extends Product{
     }
 
     private void drawLogo() {
-        monitor.drawPixelAt(1200,50,"yellow");
+        monitor.drawPixelAt(1200, 50, "yellow");
     }
 
-    public void powerUp() {
+    public void powerUp(){
         computerCase.pressPowerButton();
         drawLogo();
     }
-
-
 
 //    public ComputerCase getComputerCase() {
 //        return computerCase;

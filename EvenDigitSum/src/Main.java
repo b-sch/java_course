@@ -2,7 +2,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("Sum of all even digits in -22 = " + getEvenDigitSum(-22));
+        getEvenDigitSum(22);
 
     }
 
@@ -11,17 +11,15 @@ public class Main {
             return -1;
         }
 
-        int lastDigit = number;
-        int sumOfEvenDigits = 0;
+        int evenDigitSum = 0;
 
-        while(number > 0){
-            lastDigit = number % 10;
-            if(lastDigit % 2 == 0){
-                sumOfEvenDigits += lastDigit;
+        while(number > 0) {
+            if ((number % 10) % 2 == 0) {
+                evenDigitSum += number % 10;
             }
             number /= 10;
         }
 
-        return sumOfEvenDigits;
+        return evenDigitSum;
     }
 }

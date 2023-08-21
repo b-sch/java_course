@@ -1,40 +1,39 @@
 public class Main {
+
     public static void main(String[] args) {
 
-//        System.out.println("Is 1 number an odd number? Answer: " + isOdd(1));
-//        System.out.println("Is 2 number an odd number? Answer: " + isOdd(2));
-//        System.out.println("Is 3 number an odd number? Answer: " + isOdd(3));
-//        System.out.println("Is 4 number an odd number? Answer: " + isOdd(4));
-//        System.out.println("Is 5 number an odd number? Answer: " + isOdd(5));
-        System.out.println(sumOdd(1, 100));
-        System.out.println(sumOdd(-1, 100));
-        System.out.println(sumOdd(100, 100));
-        System.out.println(sumOdd(13, 13));
-        System.out.println(sumOdd(100, -100));
-        System.out.println(sumOdd(100, 1000));
+        sumOdd(2,10);
 
     }
 
     public static boolean isOdd(int number) {
-        if (!(number > 0)) {
+        if (number < 0) {
             return false;
         }
+
         return number % 2 != 0;
     }
 
     public static int sumOdd(int start, int end) {
-        int sumOfAllOdds = 0;
 
-        if ((start < 0) || (end < start)) {
+        if ((start < 0) || (end < 0) || (start > end)) {
+            System.out.printf("\nprovided invalid input \n start was: %s \n end was: %s", start, end);
             return -1;
         } else {
+
+            int sumOfOddNumbers = 0;
+
             for (int i = start; i <= end; i++) {
                 if (isOdd(i)) {
-                    sumOfAllOdds += i;
+                    System.out.printf("%s is an odd number in range between %s and %s\n", i, start, end);
+                    sumOfOddNumbers += i;
                 }
             }
-        }
-        return sumOfAllOdds;
-    }
 
+            System.out.println("Sum of found odd numbers is = " + sumOfOddNumbers);
+
+            return sumOfOddNumbers;
+        }
+
+    }
 }

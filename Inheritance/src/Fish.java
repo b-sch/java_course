@@ -1,20 +1,20 @@
 public class Fish extends Animal{
 
-    private int gills;
     private int fins;
+    private int gills;
 
-    public Fish(String type, double weight, int gills, int fins) {
+    public Fish(String type, double weight, int fins, int gills) {
         super(type, "small", weight);
-        this.gills = gills;
         this.fins = fins;
+        this.gills = gills;
     }
 
-    private void moveMuscles() {
-        System.out.print("muscles moving ");
+    public void moveMuscles() {
+        System.out.println("Muscles moving");
     }
 
-    private void moveBackFin() {
-        System.out.print("backfin moving ");
+    public void moveBackFin() {
+        System.out.println("Backfing moving");
     }
 
     @Override
@@ -30,8 +30,8 @@ public class Fish extends Animal{
     @Override
     public String toString() {
         return "Fish{" +
-                "gills=" + gills +
-                ", fins=" + fins +
+                "fins=" + fins +
+                ", gills=" + gills +
                 "} " + super.toString();
     }
 }

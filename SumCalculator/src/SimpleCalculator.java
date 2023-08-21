@@ -1,5 +1,4 @@
 public class SimpleCalculator {
-
     private double firstNumber;
     private double secondNumber;
 
@@ -20,16 +19,18 @@ public class SimpleCalculator {
     }
 
     public double getAdditionResult() {
-        return firstNumber + secondNumber;
+        return this.getFirstNumber() + this.getSecondNumber();
     }
+
     public double getSubtractionResult() {
-        return firstNumber - secondNumber;
+        return this.getFirstNumber() - this.getSecondNumber();
     }
+
     public double getMultiplicationResult() {
-        return firstNumber * secondNumber;
+        return this.getFirstNumber() * this.getSecondNumber();
     }
 
     public double getDivisionResult() {
-        return secondNumber == 0 ? 0 : firstNumber / secondNumber;
+        return this.getSecondNumber() == 0 ? 0 : this.getFirstNumber() * this.getSecondNumber();
     }
 }

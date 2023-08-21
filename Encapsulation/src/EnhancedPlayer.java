@@ -21,10 +21,10 @@ public class EnhancedPlayer {
     }
 
     public void loseHealth(int damage) {
+        healthPercentage -= damage;
 
-        healthPercentage = healthPercentage - damage;
         if (healthPercentage <= 0) {
-            System.out.println("Player knocked out of game");
+            System.out.println("Player knocked out of game.");
         }
     }
 
@@ -32,13 +32,12 @@ public class EnhancedPlayer {
         return healthPercentage;
     }
 
-    public void restoreHealth(int extraHealth) {
+    private void restoreHealth(int extraHealth) {
+        healthPercentage += extraHealth;
 
-        healthPercentage = healthPercentage + extraHealth;
-        if(healthPercentage > 100) {
+        if (healthPercentage > 100) {
             System.out.println("Player restored to 100%");
             healthPercentage = 100;
         }
     }
-
 }

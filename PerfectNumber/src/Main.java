@@ -2,26 +2,28 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int number = -1;
-
-        System.out.printf("Is number %1$d a perfect number? The answer is: %2$b", number, isPerfectNumber(number));
+        isPerfectNumber(10);
 
     }
 
     public static boolean isPerfectNumber(int number) {
-
         if (number < 1) {
             return false;
         }
 
-        int sumOfAllProperDivisors = 0;
+        int sumOfDivisors = 0;
 
         for (int i = 1; i < number; i++) {
-            if(number % i == 0) {
-                sumOfAllProperDivisors += i;
+
+            if (number % i == 0) {
+                sumOfDivisors += i;
+//                System.out.println(number + " is evenly divided by " + i);
             }
+
         }
 
-        return sumOfAllProperDivisors == number;
+//        System.out.println("Sum of all divisors of " + number + " is = " + sumOfDivisors);
+
+        return sumOfDivisors == number;
     }
 }

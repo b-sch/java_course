@@ -1,31 +1,34 @@
 public class Main {
     public static void main(String[] args) {
 
-//        BankAccount bankAccount = new BankAccount(12345, 500.0, "John Smith", "john.smith@mail.com", "(+48) 515-120-206");
+        Account test = new Account();
 
-        BankAccount bankAccount = new BankAccount();
+        Account bobsAccount = new Account("12345", 500.00, "Bob Brown", "myemail@bob.com", "(087) 123-4567");
 
-        System.out.println(
-                "\nCreated a bank account with this data: \n" +
-                        "Customer name: " + bankAccount.getCustomerName() + "\n" +
-                        "Customer email: " + bankAccount.getCustomerEmail() + "\n" +
-                        "Customer phone number: " + bankAccount.getCustomerPhoneNumber() + "\n" +
-                        "Customer account number: " + bankAccount.getAccountNumber() + "\n" +
-                        "Initial account balance is = " + bankAccount.getAccountBalance() + "\n"
-        );
+//        bobsAccount.setNumber("12345");
+//        bobsAccount.setBalance(1000.00);
+//        bobsAccount.setCustomerName("Bob Brown");
+//        bobsAccount.setCustomerEmail("myemail@bob.com");
+//        bobsAccount.setCustomerPhone("(087) 123-4567");
 
+        System.out.println(bobsAccount.getNumber());
+        System.out.println(bobsAccount.getBalance());
 
-        bankAccount.depositFunds(100_000.0d);
+        bobsAccount.withdrawFunds(100.0);
+        bobsAccount.depositFunds(250);
+        bobsAccount.withdrawFunds(50);
 
-        bankAccount.withdrawFunds(50_000.0d);
+        bobsAccount.withdrawFunds(200);
 
-        bankAccount.withdrawFunds(70_000.0d);
+        bobsAccount.depositFunds(100);
+        bobsAccount.withdrawFunds(45.55);
+        bobsAccount.withdrawFunds(54.46);
 
-        bankAccount.withdrawFunds(-10_000.0d);
+        bobsAccount.withdrawFunds(54.45);
 
-        BankAccount timsAccount = new BankAccount("Tim", "tim@email.com", "123456789");
+        Account timsAccount = new Account("Tim", "tim@email.com", "12345");
+        System.out.println("Account No: " + timsAccount.getNumber() + "; name " + timsAccount.getCustomerName());
 
-        System.out.println("Account No: " + timsAccount.getAccountNumber() + "; name " + timsAccount.getCustomerName());
-
+        new Account();
     }
 }

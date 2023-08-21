@@ -1,58 +1,26 @@
-import java.sql.SQLOutput;
-
 public class Main {
 
     public static void main(String[] args) {
 
-//        numberToWords(100);
-//        for(int i = -100; i <= 100; i++){
-//            System.out.printf("Reversing %1$d: %2$d \n", i , reverse(i));
-//        }
-
-//        System.out.printf("Reversing %1$d: %2$d \n", -121 , reverse(-121));
-//        System.out.printf("Reversing %1$d: %2$d \n", 1212 , reverse(1212));
-//        System.out.printf("Reversing %1$d: %2$d \n", 1234 , reverse(1234));
-//        System.out.printf("Reversing %1$d: %2$d \n", 100 , reverse(1));
-
-//        System.out.printf("The number %1$d has %2$d digits \n", 0 , getDigitCount(0));
-//        System.out.printf("The number %1$d has %2$d digits \n", 123 , getDigitCount(123));
-//        System.out.printf("The number %1$d has %2$d digits \n", -12 , getDigitCount(-12));
-//        System.out.printf("The number %1$d has %2$d digits \n", 5200 , getDigitCount(5200));
-
-        numberToWords(123);
-        System.out.println("\n");
-        numberToWords(1010);
-        System.out.println("\n");
-        numberToWords(1000);
-        System.out.println("\n");
-        numberToWords(-12);
-        System.out.println("\n");
-        numberToWords(100);
-
-//        System.out.printf("Reversing %1$d: %2$d \n", -53 , reverse(-53));
+        numberToWords(0);
 
     }
 
     public static void numberToWords(int number) {
-        int lastDigit = 0;
-        int initialNumberValue = number;
-        boolean shouldQuit = false;
-
         if (number < 0) {
             System.out.println("Invalid Value");
-            shouldQuit = true;
         }
 
-        number = reverse(number);
+        if (number == 0) {
+            System.out.print("Zero ");
+        }
 
-        for (int i = 1; i <= String.valueOf(initialNumberValue).length(); i++) {
-            if (shouldQuit) {
-                break;
-            }
+        int reversedNumber = reverse(number);
+        int amountOfZeros = getDigitCount(number) - getDigitCount(reversedNumber);
 
-            lastDigit = number % 10;
+        while (reversedNumber > 0) {
 
-            switch (lastDigit) {
+            switch (reversedNumber % 10) {
                 case 0:
                     System.out.print("Zero ");
                     break;
@@ -84,42 +52,52 @@ public class Main {
                     System.out.print("Nine ");
                     break;
                 default:
-                    System.out.print("Invalid Value");
+                    System.out.println("Something went wrong ");
                     break;
             }
 
-            number /= 10;
+            reversedNumber /= 10;
         }
 
+        if (getDigitCount(reversedNumber) != getDigitCount(number)) {
+            for (int i = 0; i < amountOfZeros; i++) {
+                System.out.print("Zero ");
+            }
+        }
     }
 
     public static int reverse(int number) {
+        boolean isNegative = number < 0;
+        String reversedNumber = "";
 
-        int lastDigit = 0;
-        int reversedNumber = 0;
-        boolean numberIsNegative = false;
-
-        if (number < 0) {
-            numberIsNegative = true;
-            number *= -1;
+        if (isNegative) {
+            number = number * -1;
         }
 
-        // reverse number
+        if (number == 0) {
+            return 0;
+        }
 
         while (number > 0) {
-            lastDigit = number % 10;
-            reversedNumber = (reversedNumber * 10) + lastDigit;
+            reversedNumber += number % 10;
             number /= 10;
         }
 
-        return numberIsNegative ? reversedNumber * -1 : reversedNumber;
+        return isNegative ? Integer.parseInt(reversedNumber) * -1 : Integer.parseInt(reversedNumber);
     }
 
     public static int getDigitCount(int number) {
-        if(number < 0){
+        if (number < 0) {
             return -1;
         }
 
-        return String.valueOf(number).length();
+        int counter = 0;
+
+        do {
+            counter++;
+            number /= 10;
+        } while (number > 0);
+
+        return counter;
     }
 }

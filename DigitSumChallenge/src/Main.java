@@ -2,27 +2,32 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int testNumber = 10;
+        sumDigits(125);
+        sumDigits(1000);
 
-        Integer i = 1;
-
-        System.out.printf("Sum of digits in %1$d = %2$d", testNumber, sumDigits(testNumber));
     }
 
     public static int sumDigits(int number) {
-        if (number <= 0) {
+        if (number < 0) {
             return -1;
         }
 
+        int initialNumber = number;
         int sumOfDigits = 0;
 
-        while (number > 9) {
-            sumOfDigits += (number % 10);
-            number = number / 10;
+        while (number != 0) {
+            System.out.printf("\nlast digit of %s is %s", number, number % 10);
+            sumOfDigits += number % 10;
+            System.out.printf("\n%s after / 10 is %s", number, number / 10);
+            number /= 10;
         }
 
-        sumOfDigits += number;
+        System.out.printf("\nsum of all digits of %s is %s", initialNumber, sumOfDigits);
+        System.out.println("\n=====\n");
 
-        return sumOfDigits;
+//        System.out.printf("last digit of %s is %s\n", number, number % 10);
+//        System.out.printf("%s after / 10 is %s", number, number / 10);
+
+        return -1;
     }
 }
