@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AllAboutStrings/AllAboutStrings.iml" filepath="$PROJECT_DIR$/AllAboutStrings/AllAboutStrings.iml" />
       <module fileurl="file://$PROJECT_DIR$/AreaCalculator/AreaCalculator.iml" filepath="$PROJECT_DIR$/AreaCalculator/AreaCalculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ArrayChallenge/ArrayChallenge.iml" filepath="$PROJECT_DIR$/ArrayChallenge/ArrayChallenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ArrayReferences/ArrayReferences.iml" filepath="$PROJECT_DIR$/ArrayReferences/ArrayReferences.iml" />
       <module fileurl="file://$PROJECT_DIR$/Arrays/Arrays.iml" filepath="$PROJECT_DIR$/Arrays/Arrays.iml" />
       <module fileurl="file://$PROJECT_DIR$/BarkingDog/BarkingDog.iml" filepath="$PROJECT_DIR$/BarkingDog/BarkingDog.iml" />
       <module fileurl="file://$PROJECT_DIR$/BillsBurgers/BillsBurgers.iml" filepath="$PROJECT_DIR$/BillsBurgers/BillsBurgers.iml" />
@@ -68,6 +70,7 @@
       <module fileurl="file://$PROJECT_DIR$/RecordProject/RecordProject.iml" filepath="$PROJECT_DIR$/RecordProject/RecordProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/SecondsAndMinutesChallenge/SecondsAndMinutesChallenge.iml" filepath="$PROJECT_DIR$/SecondsAndMinutesChallenge/SecondsAndMinutesChallenge.iml" />
       <module fileurl="file://$PROJECT_DIR$/SharedDigit/SharedDigit.iml" filepath="$PROJECT_DIR$/SharedDigit/SharedDigit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SortedArray/SortedArray.iml" filepath="$PROJECT_DIR$/SortedArray/SortedArray.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpeedConverter/SpeedConverter.iml" filepath="$PROJECT_DIR$/SpeedConverter/SpeedConverter.iml" />
       <module fileurl="file://$PROJECT_DIR$/StatementsWhiteSpaceAndIndenting/StatementsWhiteSpaceAndIndenting.iml" filepath="$PROJECT_DIR$/StatementsWhiteSpaceAndIndenting/StatementsWhiteSpaceAndIndenting.iml" />
       <module fileurl="file://$PROJECT_DIR$/StringFormatting/StringFormatting.iml" filepath="$PROJECT_DIR$/StringFormatting/StringFormatting.iml" />
@@ -84,6 +87,7 @@
       <module fileurl="file://$PROJECT_DIR$/TheObjectClass/TheObjectClass.iml" filepath="$PROJECT_DIR$/TheObjectClass/TheObjectClass.iml" />
       <module fileurl="file://$PROJECT_DIR$/ThePrimeNumberChallenge/ThePrimeNumberChallenge.iml" filepath="$PROJECT_DIR$/ThePrimeNumberChallenge/ThePrimeNumberChallenge.iml" />
       <module fileurl="file://$PROJECT_DIR$/UsingArrays/UsingArrays.iml" filepath="$PROJECT_DIR$/UsingArrays/UsingArrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VarArgs/VarArgs.iml" filepath="$PROJECT_DIR$/VarArgs/VarArgs.iml" />
       <module fileurl="file://$PROJECT_DIR$/WallAreaExercise/WallAreaExercise.iml" filepath="$PROJECT_DIR$/WallAreaExercise/WallAreaExercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/WhileLoop/WhileLoop.iml" filepath="$PROJECT_DIR$/WhileLoop/WhileLoop.iml" />
       <module fileurl="file://$PROJECT_DIR$/WhileLoopChallenge/WhileLoopChallenge.iml" filepath="$PROJECT_DIR$/WhileLoopChallenge/WhileLoopChallenge.iml" />
