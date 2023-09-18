@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/AreaCalculator/AreaCalculator.iml" filepath="$PROJECT_DIR$/AreaCalculator/AreaCalculator.iml" />
       <module fileurl="file://$PROJECT_DIR$/ArrayAndArrayLists/ArrayAndArrayLists.iml" filepath="$PROJECT_DIR$/ArrayAndArrayLists/ArrayAndArrayLists.iml" />
       <module fileurl="file://$PROJECT_DIR$/ArrayChallenge/ArrayChallenge.iml" filepath="$PROJECT_DIR$/ArrayChallenge/ArrayChallenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ArrayListChallenge/ArrayListChallenge.iml" filepath="$PROJECT_DIR$/ArrayListChallenge/ArrayListChallenge.iml" />
       <module fileurl="file://$PROJECT_DIR$/ArrayLists/ArrayLists.iml" filepath="$PROJECT_DIR$/ArrayLists/ArrayLists.iml" />
       <module fileurl="file://$PROJECT_DIR$/ArrayReferences/ArrayReferences.iml" filepath="$PROJECT_DIR$/ArrayReferences/ArrayReferences.iml" />
       <module fileurl="file://$PROJECT_DIR$/Arrays/Arrays.iml" filepath="$PROJECT_DIR$/Arrays/Arrays.iml" />
@@ -54,6 +55,7 @@
       <module fileurl="file://$PROJECT_DIR$/MinimumElementChallenge/MinimumElementChallenge.iml" filepath="$PROJECT_DIR$/MinimumElementChallenge/MinimumElementChallenge.iml" />
       <module fileurl="file://$PROJECT_DIR$/MinimumElementChallengeCourseCode/MinimumElementChallengeCourseCode.iml" filepath="$PROJECT_DIR$/MinimumElementChallengeCourseCode/MinimumElementChallengeCourseCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/MinutesToYearsDaysCalculator/MinutesToYearsDaysCalculator.iml" filepath="$PROJECT_DIR$/MinutesToYearsDaysCalculator/MinutesToYearsDaysCalculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MobilePhone/MobilePhone.iml" filepath="$PROJECT_DIR$/MobilePhone/MobilePhone.iml" />
       <module fileurl="file://$PROJECT_DIR$/MultipleArrays/MultipleArrays.iml" filepath="$PROJECT_DIR$/MultipleArrays/MultipleArrays.iml" />
       <module fileurl="file://$PROJECT_DIR$/NumberInWord/NumberInWord.iml" filepath="$PROJECT_DIR$/NumberInWord/NumberInWord.iml" />
       <module fileurl="file://$PROJECT_DIR$/NumberOfDaysInMonth/NumberOfDaysInMonth.iml" filepath="$PROJECT_DIR$/NumberOfDaysInMonth/NumberOfDaysInMonth.iml" />
