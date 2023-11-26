@@ -4,10 +4,13 @@ public class Main {
         MobilePhone mobilePhone = new MobilePhone("123456789");
 
         mobilePhone.printContacts();
-        mobilePhone.addNewContact(Contact.createContact("Bob", "123"));
+        System.out.println(mobilePhone.addNewContact(Contact.createContact("Bob", "123")));
         mobilePhone.printContacts();
-
-//        ArrayList<Integer> testList = new ArrayList<>(List.of(1,2,3));
-//        System.out.println(testList.indexOf(0));
+//        mobilePhone.invokeFindContact();
+        mobilePhone.updateContact(Contact.createContact("Bob", "123"), Contact.createContact("Trevor", "111"));
+        mobilePhone.printContacts();
+        System.out.println(mobilePhone.queryContact("Trevor"));
+        mobilePhone.removeContact(Contact.createContact("Trevor", "123"));
+        mobilePhone.printContacts();
     }
 }
