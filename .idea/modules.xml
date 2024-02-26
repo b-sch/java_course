@@ -23,6 +23,7 @@
       <module fileurl="file://$PROJECT_DIR$/ClassChallengeExercise/ClassChallengeExercise.iml" filepath="$PROJECT_DIR$/ClassChallengeExercise/ClassChallengeExercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/ClassesAndObjects/ClassesAndObjects.iml" filepath="$PROJECT_DIR$/ClassesAndObjects/ClassesAndObjects.iml" />
       <module fileurl="file://$PROJECT_DIR$/ClassesPart1/ClassesPart1.iml" filepath="$PROJECT_DIR$/ClassesPart1/ClassesPart1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Comparing/Comparing.iml" filepath="$PROJECT_DIR$/Comparing/Comparing.iml" />
       <module fileurl="file://$PROJECT_DIR$/ComplexNumberOperations/ComplexNumberOperations.iml" filepath="$PROJECT_DIR$/ComplexNumberOperations/ComplexNumberOperations.iml" />
       <module fileurl="file://$PROJECT_DIR$/CompositionChallenge/CompositionChallenge.iml" filepath="$PROJECT_DIR$/CompositionChallenge/CompositionChallenge.iml" />
       <module fileurl="file://$PROJECT_DIR$/CompositionChallenge2/CompositionChallenge2.iml" filepath="$PROJECT_DIR$/CompositionChallenge2/CompositionChallenge2.iml" />
@@ -43,6 +44,7 @@
       <module fileurl="file://$PROJECT_DIR$/FlourPacker/FlourPacker.iml" filepath="$PROJECT_DIR$/FlourPacker/FlourPacker.iml" />
       <module fileurl="file://$PROJECT_DIR$/ForChallenge/ForChallenge.iml" filepath="$PROJECT_DIR$/ForChallenge/ForChallenge.iml" />
       <module fileurl="file://$PROJECT_DIR$/ForStatement/ForStatement.iml" filepath="$PROJECT_DIR$/ForStatement/ForStatement.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GenericTypes/GenericTypes.iml" filepath="$PROJECT_DIR$/GenericTypes/GenericTypes.iml" />
       <module fileurl="file://$PROJECT_DIR$/GreatestCommonDivisor/GreatestCommonDivisor.iml" filepath="$PROJECT_DIR$/GreatestCommonDivisor/GreatestCommonDivisor.iml" />
       <module fileurl="file://$PROJECT_DIR$/IfKeywordAndCodeBlocks/IfKeywordAndCodeBlocks.iml" filepath="$PROJECT_DIR$/IfKeywordAndCodeBlocks/IfKeywordAndCodeBlocks.iml" />
       <module fileurl="file://$PROJECT_DIR$/Inheritance/Inheritance.iml" filepath="$PROJECT_DIR$/Inheritance/Inheritance.iml" />
