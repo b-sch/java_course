@@ -1,9 +1,19 @@
 package dev.lpa;
 
 import dev.lpa.model.*;
+import dev.lpa.util.QueryItem;
+import dev.lpa.util.QueryList;
 
 import java.util.ArrayList;
 import java.util.List;
+
+record Employee(String name) implements QueryItem {
+
+    @Override
+    public boolean matchFieldValue(String fieldName, String value) {
+        return false;
+    }
+}
 
 interface Testable {
 
@@ -39,6 +49,17 @@ public class Main {
 
         testList(new ArrayList<String>(List.of("Able", "Barry", "Charlie")));
         testList(new ArrayList<Integer>(List.of(1,2,3)));
+
+        var queryList = new QueryList<>(lpaStudents);
+        var matches = queryList.getMatches("Course", "Python");
+        printMoreLists(matches);
+
+        System.out.println("=".repeat(50));
+
+        var students2021 = QueryList.getMatches(students, "YearStarted", "2021");
+        printMoreLists(students2021);
+
+//        QueryList<Employee> employeeList = new QueryList<>();
     }
 
     public static void printMoreLists(List<? extends Student> students) {
