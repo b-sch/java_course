@@ -45,6 +45,7 @@
       <module fileurl="file://$PROJECT_DIR$/ForChallenge/ForChallenge.iml" filepath="$PROJECT_DIR$/ForChallenge/ForChallenge.iml" />
       <module fileurl="file://$PROJECT_DIR$/ForStatement/ForStatement.iml" filepath="$PROJECT_DIR$/ForStatement/ForStatement.iml" />
       <module fileurl="file://$PROJECT_DIR$/GenericTypes/GenericTypes.iml" filepath="$PROJECT_DIR$/GenericTypes/GenericTypes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GenericsChallenge/GenericsChallenge.iml" filepath="$PROJECT_DIR$/GenericsChallenge/GenericsChallenge.iml" />
       <module fileurl="file://$PROJECT_DIR$/GenericsExtra/GenericsExtra.iml" filepath="$PROJECT_DIR$/GenericsExtra/GenericsExtra.iml" />
       <module fileurl="file://$PROJECT_DIR$/GreatestCommonDivisor/GreatestCommonDivisor.iml" filepath="$PROJECT_DIR$/GreatestCommonDivisor/GreatestCommonDivisor.iml" />
       <module fileurl="file://$PROJECT_DIR$/IfKeywordAndCodeBlocks/IfKeywordAndCodeBlocks.iml" filepath="$PROJECT_DIR$/IfKeywordAndCodeBlocks/IfKeywordAndCodeBlocks.iml" />
@@ -68,6 +69,7 @@
       <module fileurl="file://$PROJECT_DIR$/MethodChallenge/MethodChallenge.iml" filepath="$PROJECT_DIR$/MethodChallenge/MethodChallenge.iml" />
       <module fileurl="file://$PROJECT_DIR$/MethodOverloadChallenge/MethodOverloadChallenge.iml" filepath="$PROJECT_DIR$/MethodOverloadChallenge/MethodOverloadChallenge.iml" />
       <module fileurl="file://$PROJECT_DIR$/MethodOverloading/MethodOverloading.iml" filepath="$PROJECT_DIR$/MethodOverloading/MethodOverloading.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MethodReferences/MethodReferences.iml" filepath="$PROJECT_DIR$/MethodReferences/MethodReferences.iml" />
       <module fileurl="file://$PROJECT_DIR$/MinMaxChallenge/MinMaxChallenge.iml" filepath="$PROJECT_DIR$/MinMaxChallenge/MinMaxChallenge.iml" />
       <module fileurl="file://$PROJECT_DIR$/MinimumElement/MinimumElement.iml" filepath="$PROJECT_DIR$/MinimumElement/MinimumElement.iml" />
       <module fileurl="file://$PROJECT_DIR$/MinimumElementChallenge/MinimumElementChallenge.iml" filepath="$PROJECT_DIR$/MinimumElementChallenge/MinimumElementChallenge.iml" />
