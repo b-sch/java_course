@@ -58,6 +58,7 @@
       <module fileurl="file://$PROJECT_DIR$/Interfaces/Interfaces.iml" filepath="$PROJECT_DIR$/Interfaces/Interfaces.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/JAVA.iml" filepath="$PROJECT_DIR$/.idea/JAVA.iml" />
       <module fileurl="file://$PROJECT_DIR$/KeywordsAndExpressions/KeywordsAndExpressions.iml" filepath="$PROJECT_DIR$/KeywordsAndExpressions/KeywordsAndExpressions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LambdaChallenge/LambdaChallenge.iml" filepath="$PROJECT_DIR$/LambdaChallenge/LambdaChallenge.iml" />
       <module fileurl="file://$PROJECT_DIR$/LambdaExpressions/LambdaExpressions.iml" filepath="$PROJECT_DIR$/LambdaExpressions/LambdaExpressions.iml" />
       <module fileurl="file://$PROJECT_DIR$/LambdaIntro/LambdaIntro.iml" filepath="$PROJECT_DIR$/LambdaIntro/LambdaIntro.iml" />
       <module fileurl="file://$PROJECT_DIR$/LargestPrime/LargestPrime.iml" filepath="$PROJECT_DIR$/LargestPrime/LargestPrime.iml" />

@@ -33,6 +33,8 @@ public class Main {
                         (s) -> s.concat("s")
                 )
         );
+
+        
     }
 
 }
