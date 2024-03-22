@@ -22,7 +22,15 @@ public class Main {
 //        namesList.replaceAll(String::toUpperCase);
 //        namesList.replaceAll(s -> s.concat(getRandomCharacter()));
 //        namesList.replaceAll(s -> s.concat(getReversedName(s)));
-        
+
+    }
+
+    public static String replaceWithDifferentChars(String s) {
+        char[] characters = s.toCharArray();
+        for (char chr : characters) {
+            chr = 'k';
+        }
+        return s;
     }
 
     public static String getReversedName(String s) {
