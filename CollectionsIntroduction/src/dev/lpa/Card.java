@@ -14,6 +14,6 @@ public class Card {
 
     @Override
     public String toString() {
-        return "%s%s(%s)".formatted(face.toUpperCase().charAt(0), suit, rank);
+        return "%s%s(%s)".formatted((face.matches("[JQKAjqka].+")) ? face.toUpperCase().charAt(0) : face, suit, rank);
     }
 }
