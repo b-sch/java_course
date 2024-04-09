@@ -59,7 +59,7 @@ public class Main {
         symmetricDiff2.removeAll(intersectAB);
         printData("Symmetric difference: phones and emails", symmetricDiff2);
 
-        
+
     }
 
     public static void printData(String header, Collection<Contact> contacts) {

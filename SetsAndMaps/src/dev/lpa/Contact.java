@@ -53,7 +53,7 @@ public class Contact {
     @Override
     public String toString() {
 //        return "%s%n Emails: %s%n Phone numbers: %s%n".formatted(name, emails, phones); // my solution
-        return "%s: %s %s".formatted(name, emails, phones);
+        return "%-20s: %-30s %-30s".formatted(name, emails, phones);
     }
 
     public Contact mergeContactData(Contact contact) {
@@ -94,7 +94,7 @@ public class Contact {
 
 
     public void replaceEmailIfExists(String oldEmail, String newEmail) {
-        
+
         if (emails.contains(oldEmail)) {
             emails.remove(oldEmail);
             emails.add(newEmail);
