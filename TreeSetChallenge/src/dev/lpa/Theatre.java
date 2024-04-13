@@ -1,30 +1,114 @@
 package dev.lpa;
 
-import java.util.Comparator;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Theatre {
 
-    private String name;
+    // ==================
+    // logging definition
+    private static Logger LOG = null;
+
+    static {
+        System.setProperty(
+                "java.util.logging.SimpleFormatter.format",
+                "[%1$tF %1$tT] [%4$-7s] %3$s | %5$s %n");
+        // Logger to get logs
+        LOG = Logger.getLogger(Theatre.class.getName());
+        LOG.setLevel(Level.ALL);
+    }
+
+    // ==================
+
+    private final String name;
     private final int rowSeatCapacity = 26;
-    private final Set<Seat> seats = new TreeSet<>(Comparator.comparing(Seat::getSeatID));
+    private final int startingSeatNumber = 1;
+    private final int firstRow = 'A';
+    private final int lastRow = 'Z';
+    private final TreeSet<Seat> seats = new TreeSet<>(Comparator.comparing(Seat::getSeatID));
 
     public Theatre(String name) {
         this.name = name;
         for (int row = 'A'; row <= 'Z'; row++) {
-            for (int seat = 0; seat <= rowSeatCapacity; seat++) {
+            for (int seat = startingSeatNumber; seat <= rowSeatCapacity; seat++) {
                 seats.add(new Seat((char) row, seat));
+            }
+        }
+
+        LOG.info("%s".formatted(this));
+    }
+
+    public void handleSeatBooking(SeatAction action, String seatID) {
+        Seat handledSeat = searchSeat(seatID);
+
+        LOG.info("Handling seat booking for: %s".formatted(handledSeat));
+
+        if (action == null) {
+            throw new IllegalArgumentException("Seat action must be specified");
+        }
+
+        // TODO: extract searching function
+        // TODO: use it to manage seat and batch manage seat (it will make things easier, because now You're doing same thing but in different ways - see searching / update stuff in seats)
+
+        switch (action) {
+            case RESERVE -> {
+                LOG.info("Performing booking action: %s".formatted(SeatAction.RESERVE));
+                handledSeat.setReserved(true);
+            }
+            case VACATE -> {
+                LOG.info("Performing booking action: %s".formatted(SeatAction.VACATE));
+                handledSeat.setReserved(false);
             }
         }
     }
 
+    public void handleMultipleSeatBooking(SeatAction action, String startSeatID, String endSeatID) {
+        LOG.info("Handling multiple seat booking for seats from: %s to %s".formatted(startSeatID, endSeatID));
+
+        if (action == null) {
+            throw new IllegalArgumentException("Seat action must be specified");
+        }
+
+        Seat startSeat = searchSeat(startSeatID);
+        Seat endSeat = searchSeat(endSeatID);
+
+        SortedSet<Seat> bookingRange = seats.subSet(startSeat, true, endSeat, true);
+
+        switch (action) {
+            case RESERVE -> {
+                LOG.info("Action: %s".formatted(SeatAction.RESERVE));
+                bookingRange.forEach(seat -> seat.setReserved(true));
+            }
+            case VACATE -> {
+                LOG.info("Action: %s".formatted(SeatAction.VACATE));
+                bookingRange.forEach(seat -> seat.setReserved(false));
+            }
+        }
+
+    }
+
+    private Seat searchSeat(String seatID) {
+        LOG.info("Searching for seat: %s".formatted(seatID));
+        Seat searchedSeat = new Seat(seatID);
+
+        if (!seats.contains(searchedSeat))
+            throw new IllegalArgumentException("Seat %s was not found.".formatted(seatID));
+
+        List<Seat> convertedSet = new ArrayList<>(seats);
+        int index = Collections.binarySearch(convertedSet, searchedSeat, Comparator.comparing(Seat::getSeatID));
+
+        return convertedSet.get(index);
+    }
+
     public void printSeatMap(boolean onlyReserved) {
         System.out.println("""
-                \n
+                                
                 =========================================
                 Map of seats %s
-                =========================================""".formatted(onlyReserved ? "(only reserved seats)" : "(all seats in the theatre)"));
+                =========================================             
+                """.formatted(onlyReserved ? "(only reserved seats)" : "(all seats in the theatre)"));
+
         seats.forEach(seat -> {
             if (onlyReserved) {
                 if (seat.isReserved) System.out.print(seat + " ");
@@ -40,27 +124,7 @@ public class Theatre {
 
     @Override
     public String toString() {
-        return "Theater name: %s%n Number of seats in a row: %s".formatted(this.name, rowSeatCapacity);
-    }
-
-    public void manageSeat(SeatAction action, String seatID) {
-        System.out.printf("Managing seat: %s%n", seatID);
-        Seat searchedSeat = new Seat(seatID);
-
-        if (!seats.contains(searchedSeat))
-            throw new IllegalArgumentException("Seat %s was not found.".formatted(seatID));
-        if (action == null) {
-            throw new IllegalArgumentException("Seat action must be specified");
-        }
-
-        seats.forEach(seat -> {
-            if (seat.getSeatID().equals(searchedSeat.getSeatID())) {
-                switch (action) {
-                    case RESERVE -> seat.setReserved(true);
-                    case VACATE -> seat.setReserved(false);
-                }
-            }
-        });
+        return "Theater name: %s | Number of seats in a row: %s".formatted(this.name, rowSeatCapacity);
     }
 
     public enum SeatAction {
@@ -78,8 +142,8 @@ public class Theatre {
         public Seat(char row, int seat) {
             if (seat > rowSeatCapacity || seat < 0)
                 throw new IllegalArgumentException("Seat number %d is out of range: %d-%d".formatted(seat, 0, rowSeatCapacity));
-            if ((int) row < 65 || (int) row > 95)
-                throw new IllegalArgumentException("Seat row %s is out of range: %s-%s".formatted(row, (char) 65, (char) 95));
+            if ((int) row < firstRow || (int) row > lastRow)
+                throw new IllegalArgumentException("Seat row %s is out of range: %s-%s".formatted(row, (char) firstRow, (char) lastRow));
 
             this.row = row;
             this.seat = seat;
@@ -104,15 +168,15 @@ public class Theatre {
 
         public void setReserved(boolean reserved) {
             if (isReserved && reserved) {
-                System.out.printf("Seat %s is already reserved. %n", this.seatID);
+                LOG.warning("Seat %s is already reserved. Canceling reserve...".formatted(this.seatID));
             } else if (!isReserved && !reserved) {
-                System.out.printf("Seat %s is already vacated. %n", this.seatID);
+                LOG.warning("Seat %s is already vacated. Canceling vacate...".formatted(this.seatID));
             } else {
                 isReserved = reserved;
                 if (isReserved) {
-                    System.out.printf("Reserved seat %s%n", this.seatID);
+                    LOG.info("Reserved seat: %-10s".formatted(seatID));
                 } else {
-                    System.out.printf("Vacated seat %s%n", this.seatID);
+                    LOG.info("Vacated seat: %-10s".formatted(seatID));
                 }
             }
         }
